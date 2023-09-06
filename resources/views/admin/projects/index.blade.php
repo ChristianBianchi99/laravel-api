@@ -13,6 +13,9 @@
                             Nome
                         </th>
                         <th>
+                            Slug
+                        </th>
+                        <th>
                             Descrizione
                         </th>
                         <th>
@@ -23,6 +26,9 @@
                         <tr>
                             <td>
                                 {{ $project->name }}
+                            </td>
+                            <td>
+                                {{ $project->slug != '' ? $project->slug : 'Slug non presente' }}
                             </td>
                             <td>
                                 {{ $project->description }}
